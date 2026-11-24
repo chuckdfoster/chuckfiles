@@ -14,6 +14,7 @@ main{max-width:850px;padding:35px 20px 80px;margin:auto}.intro{font-size:1.1rem;
 .steps{list-style:none;counter-reset:recipe;padding:0;margin:0}.steps li{counter-increment:recipe;display:grid;grid-template-columns:38px 1fr;gap:12px;padding:17px 0;border-bottom:1px solid var(--line)}.steps li::before{content:counter(recipe);display:grid;place-items:center;width:34px;height:34px;background:var(--cream);color:var(--wine);border-radius:50%;font-weight:750}.steps strong{display:block;font-size:1.02rem;margin-bottom:3px}.steps p{margin:0}.note{background:#f6eee6;border-left:4px solid var(--wine);padding:16px 18px;border-radius:0 9px 9px 0}.timeline{display:grid;grid-template-columns:70px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}.timeline time{font-weight:700;color:var(--wine)}.timeline div{color:#51453c}.footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:36px}.section-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.small{font-size:.78rem}.wine{font-size:1.03rem}
 @media(max-width:540px){.hero{padding:45px 20px 40px}.card{padding:19px 17px;margin:18px 0}.actions .btn{flex:1;text-align:center}.steps li{gap:7px;grid-template-columns:35px 1fr}}
 @media print{.hero{background:white;color:black;padding:16px}.hero p,.eyebrow{color:black}.actions{display:none}.card{break-inside:avoid;box-shadow:none}body{font-size:12px}main{padding:0 15px}.ingredient{padding:3px 0}}
+.food-photo{max-width:420px;margin:0 auto 26px;text-align:center}.food-photo img{display:block;width:100%;height:auto;border-radius:16px;box-shadow:0 12px 32px #33200c22}.food-photo figcaption{font-size:.82rem;color:var(--muted);margin-top:8px}
 </style>
 </head>
 <body>
@@ -24,6 +25,7 @@ main{max-width:850px;padding:35px 20px 80px;margin:auto}.intro{font-size:1.1rem;
 <div class="stats"><span>Serves 2</span><span>20 min prep</span><span>3–3½ hr cook</span><span>300°F oven</span></div>
 </header>
 <main>
+<figure class="food-photo"><img src="images/red-wine-short-ribs-plated.jpg" alt="Homemade red wine braised short ribs plated over creamy mashed potatoes with rosemary" width="300" height="330" fetchpriority="high"><figcaption>The finished dish, made at home.</figcaption></figure>
 <p class="intro">Tender beef, a glossy red wine sauce, and buttery potatoes. Use pre-chopped vegetables and refrigerated mashed potatoes to keep prep short while the Dutch oven does the heavy lifting.</p>
 <nav class="actions" aria-label="Recipe shortcuts"><a href="#ingredients" class="btn primary">Ingredients</a><a href="#method" class="btn">Cooking steps</a><a href="#timeline" class="btn">Timeline</a><button class="btn" onclick="window.print()">Print</button></nav>
 <section id="ingredients" class="card">
