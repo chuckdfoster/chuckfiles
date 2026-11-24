@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#251d1a">
+<meta name="description" content="Cozy red wine braised short ribs with garlic-Parmesan mashed potatoes. A simplified date-night recipe for two.">
+<title>Red Wine Braised Short Ribs | Date Night Dinner</title>
+<style>
+:root{color-scheme:light;--ink:#29231f;--muted:#73675f;--paper:#fffaf3;--cream:#f5ede1;--wine:#713b48;--line:#e5d9cb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button{font:inherit;cursor:pointer}a{color:inherit}
+.hero{background:radial-gradient(circle at 90% 10%,#704650,#251d1a 60%);color:#fff9f0;padding:64px 22px 52px;text-align:center}.eyebrow{text-transform:uppercase;letter-spacing:.19em;font-size:.75rem;color:#eec9a6;font-weight:700}.hero h1{font-family:Georgia,serif;font-size:clamp(2.3rem,8vw,4.2rem);line-height:1.1;max-width:770px;margin:18px auto}.hero p{color:#e9d7c9;max-width:550px;margin:0 auto 23px}.stats{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.stats span{border:1px solid #ffffff55;padding:6px 12px;border-radius:30px;font-size:.82rem}
+main{max-width:850px;padding:35px 20px 80px;margin:auto}.intro{font-size:1.1rem;color:#55483f}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 30px}.btn{border:1px solid var(--wine);color:var(--wine);background:transparent;border-radius:9px;padding:10px 16px;font-weight:650;text-decoration:none}.btn.primary{background:var(--wine);color:white}.btn:focus-visible,input:focus-visible{outline:3px solid #dca878;outline-offset:3px}
+.card{border:1px solid var(--line);background:#fff;border-radius:17px;padding:24px;margin:24px 0;box-shadow:0 6px 24px #38200c0a}h2{font:700 clamp(1.55rem,5vw,2.1rem)/1.2 Georgia,serif;margin:0 0 15px}h3{margin:22px 0 8px;font-size:1rem;color:var(--wine)}.sub{color:var(--muted);font-size:.92rem;margin:-4px 0 20px}.ingredients{display:grid;gap:4px}.ingredient{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #f0e8df}.ingredient input{accent-color:var(--wine);width:20px;height:20px;flex:none;margin-top:3px}.ingredient:has(input:checked) span{color:#8b847c;text-decoration:line-through}
+.steps{list-style:none;counter-reset:recipe;padding:0;margin:0}.steps li{counter-increment:recipe;display:grid;grid-template-columns:38px 1fr;gap:12px;padding:17px 0;border-bottom:1px solid var(--line)}.steps li::before{content:counter(recipe);display:grid;place-items:center;width:34px;height:34px;background:var(--cream);color:var(--wine);border-radius:50%;font-weight:750}.steps strong{display:block;font-size:1.02rem;margin-bottom:3px}.steps p{margin:0}.note{background:#f6eee6;border-left:4px solid var(--wine);padding:16px 18px;border-radius:0 9px 9px 0}.timeline{display:grid;grid-template-columns:70px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}.timeline time{font-weight:700;color:var(--wine)}.timeline div{color:#51453c}.footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:36px}.section-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.small{font-size:.78rem}.wine{font-size:1.03rem}
+@media(max-width:540px){.hero{padding:45px 20px 40px}.card{padding:19px 17px;margin:18px 0}.actions .btn{flex:1;text-align:center}.steps li{gap:7px;grid-template-columns:35px 1fr}}
+@media print{.hero{background:white;color:black;padding:16px}.hero p,.eyebrow{color:black}.actions{display:none}.card{break-inside:avoid;box-shadow:none}body{font-size:12px}main{padding:0 15px}.ingredient{padding:3px 0}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="eyebrow">A cozy date-night dinner for two 🍷</div>
+<h1>Red Wine Braised<br>Short Ribs</h1>
+<p>With creamy garlic-Parmesan mashed potatoes. Rich, comforting, and surprisingly easy with a few smart shortcuts.</p>
+<div class="stats"><span>Serves 2</span><span>20 min prep</span><span>3–3½ hr cook</span><span>300°F oven</span></div>
+</header>
+<main>
+<p class="intro">Tender beef, a glossy red wine sauce, and buttery potatoes. Use pre-chopped vegetables and refrigerated mashed potatoes to keep prep short while the Dutch oven does the heavy lifting.</p>
+<nav class="actions" aria-label="Recipe shortcuts"><a href="#ingredients" class="btn primary">Ingredients</a><a href="#method" class="btn">Cooking steps</a><a href="#timeline" class="btn">Timeline</a><button class="btn" onclick="window.print()">Print</button></nav>
+<section id="ingredients" class="card">
+<div class="section-head"><h2>Shopping list</h2><button class="btn small" id="reset" type="button">Clear checks</button></div>
+<p class="sub">Tap each item as you shop or prep.</p>
+<h3>Short ribs</h3>
+<div class="ingredients">
+<label class="ingredient"><input type="checkbox"><span>2–2½ lb bone-in beef short ribs (English-cut preferred)</span></label>
+<label class="ingredient"><input type="checkbox"><span>2 cups pre-chopped mirepoix (onion, carrots, celery)</span></label>
+<label class="ingredient"><input type="checkbox"><span>1 tbsp minced garlic</span></label>
+<label class="ingredient"><input type="checkbox"><span>2 tbsp tomato paste</span></label>
+<label class="ingredient"><input type="checkbox"><span>2 cups dry red wine (Cabernet or Bordeaux-style blend)</span></label>
+<label class="ingredient"><input type="checkbox"><span>1–2 cups low-sodium beef broth</span></label>
+<label class="ingredient"><input type="checkbox"><span>2 sprigs fresh thyme and 1 sprig rosemary (or dried herbs)</span></label>
+<label class="ingredient"><input type="checkbox"><span>2 tbsp olive oil; salt and pepper</span></label>
+<label class="ingredient"><input type="checkbox"><span>1 tbsp cold butter (to finish sauce)</span></label>
+</div>
+<h3>Garlic-Parmesan mashed potatoes</h3>
+<div class="ingredients">
+<label class="ingredient"><input type="checkbox"><span>1 package refrigerated mashed potatoes (20–24 oz)</span></label>
+<label class="ingredient"><input type="checkbox"><span>1 tbsp butter</span></label>
+<label class="ingredient"><input type="checkbox"><span>1 tsp minced garlic</span></label>
+<label class="ingredient"><input type="checkbox"><span>2 tbsp grated Parmesan</span></label>
+</div>
+</section>
+<section id="method" class="card">
+<h2>Step-by-step</h2>
+<ol class="steps">
+<li><div><strong>Preheat and season</strong><p>Preheat oven to <b>300°F</b>. Pat ribs very dry, then season generously with salt and pepper.</p></div></li>
+<li><div><strong>Sear the beef</strong><p>Heat 2 tbsp olive oil in a Dutch oven over medium-high. Brown ribs for <b>2–4 minutes per meaty side</b>. Transfer to a plate.</p></div></li>
+<li><div><strong>Build the flavor</strong><p>Reduce heat to medium. Add 2 cups pre-chopped mirepoix and sauté <b>5–7 minutes</b>. Stir in 1 tbsp minced garlic and 2 tbsp tomato paste for 1 minute.</p></div></li>
+<li><div><strong>Reduce the wine</strong><p>Pour in <b>2 cups red wine</b>, scraping up browned bits. Simmer <b>8–10 minutes</b> until reduced by roughly half.</p></div></li>
+<li><div><strong>Add broth and herbs</strong><p>Return ribs and juices to the pot. Add about <b>1–2 cups broth</b>, enough to reach halfway to two-thirds up the meat, plus thyme and rosemary. Bring to a gentle simmer.</p></div></li>
+<li><div><strong>Braise until tender</strong><p>Cover and bake at <b>300°F for 2½–3½ hours</b>. Check at 2½ hours. If the beef still resists a fork, continue in 20-minute increments.</p></div></li>
+<li><div><strong>Finish the sauce</strong><p>Remove ribs and cover loosely with foil. Skim fat; optionally strain liquid into a saucepan. Simmer uncovered <b>10–15 minutes</b> until glossy. Turn off heat and stir in <b>1 tbsp cold butter</b>. Taste before salting.</p></div></li>
+<li><div><strong>Upgrade the mashed potatoes</strong><p>Heat prepared potatoes as directed. Melt <b>1 tbsp butter</b> over medium-low, stir in <b>1 tsp minced garlic</b> for 60–90 seconds, then mix this garlic butter and <b>2 tbsp Parmesan</b> into the potatoes.</p></div></li>
+<li><div><strong>Plate</strong><p>Make a bed of mashed potatoes, add the tender ribs, and generously spoon the red wine sauce over everything.</p></div></li>
+</ol>
+</section>
+<section id="timeline" class="card">
+<h2>Simple cooking timeline</h2>
+<p class="sub">Relative to your desired dinner time. Start about 4 hours early so there is room for a slower braise.</p>
+<div class="timeline"><time>−4:00</time><div>Preheat, season, and sear the ribs.</div></div>
+<div class="timeline"><time>−3:40</time><div>Cook vegetables, add tomato paste and garlic, then reduce wine.</div></div>
+<div class="timeline"><time>−3:20</time><div>Add broth and herbs; cover and place in oven.</div></div>
+<div class="timeline"><time>−0:50</time><div>Check fork tenderness. Continue braising if needed.</div></div>
+<div class="timeline"><time>−0:30</time><div>Once tender, remove ribs and reduce sauce.</div></div>
+<div class="timeline"><time>−0:15</time><div>Heat and upgrade mashed potatoes.</div></div>
+<div class="timeline"><time>−0:05</time><div>Plate and pour wine.</div></div>
+<div class="timeline"><time>0:00</time><div>Enjoy dinner! 🍷</div></div>
+</section>
+<section class="card"><h2>Wine & chef's notes</h2>
+<p class="wine">Pair with a <b>Saint-Julien Bordeaux</b> or a balanced <b>Napa Cabernet Sauvignon</b>. Save the special bottle for drinking; an inexpensive, drinkable dry red works for cooking.</p>
+<div class="note"><b>Three keys to success:</b> Don't skip the sear or wine reduction. Keep the Dutch oven covered rather than basting. Let fork tenderness, not the timer, decide when the meat is done.</div>
+</section>
+<p class="footer">Made for a cozy night in. Good food, good wine, good company.</p>
+</main>
+<script>
+document.querySelector('#reset').addEventListener('click',()=>document.querySelectorAll('.ingredient input').forEach(input=>input.checked=false));
+</script>
+</body></html>
